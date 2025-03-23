@@ -88,29 +88,6 @@ A web-based application that extracts news articles about a company, performs se
 4. Results are displayed in the Streamlit interface
 5. Audio generation happens on-demand
 
-## Deployment
-
-This application is deployed on Hugging Face Spaces. You can access it at:
-[https://huggingface.co/spaces/yourusername/news-sentiment-analysis](https://huggingface.co/spaces/yourusername/news-sentiment-analysis)
-
-### Deployment Steps
-
-1. Create an account on Hugging Face
-2. Create a new Space with Streamlit SDK
-3. Upload the application files
-4. Add your News API key to the Space secrets
-
-## Limitations and Future Improvements
-
-- **Translation**: Currently, the application does not translate English to Hindi before TTS. A future version could incorporate translation APIs.
-- **Advanced NLP**: Replace keyword-based topic extraction with more sophisticated NLP techniques like LDA.
-- **Real-time Updates**: Implement WebSockets for real-time news updates.
-- **User Accounts**: Add user authentication to save analysis history.
-- **Custom Sentiment Models**: Train domain-specific sentiment models for better accuracy.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
