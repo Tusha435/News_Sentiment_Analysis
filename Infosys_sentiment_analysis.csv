@@ -1,0 +1,15 @@
+company,summary,total_articles,positive_count,negative_count,neutral_count,avg_polarity,avg_subjectivity,top_topics
+Infosys,"
+    Sentiment Analysis Summary for Infosys:
+    
+    Based on the analysis of 10 news articles, the overall sentiment toward Infosys is positive.
+    
+    Sentiment Distribution:
+    - Positive: 7 articles (70.0%)
+    - Negative: 1 articles (10.0%)
+    - Neutral: 2 articles (20.0%)
+    
+    The average sentiment polarity is 0.18 (on a scale from -1 to 1).
+    
+    Main topics discussed in relation to Infosys are: Financial Performance, Stock Market, Innovation, Products & Services, Management.
+    ",10,7,1,2,0.18230393500796147,0.41844807260898087,"['Financial Performance', 'Stock Market', 'Innovation', 'Products & Services', 'Management']"
