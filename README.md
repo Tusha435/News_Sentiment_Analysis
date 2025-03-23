@@ -17,7 +17,7 @@ A web-based application that extracts news articles about a company, performs se
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/news-sentiment-analysis.git
+   git clone https://github.com/Tusha435/News_Sentiment_Analysis.git
    cd news-sentiment-analysis
    ```
 
