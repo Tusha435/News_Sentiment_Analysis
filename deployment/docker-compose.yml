@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ../
+      dockerfile: backend/Dockerfile
+    container_name: stockpredict-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - model_data:/app/backend/trained_models
+      - cache_data:/app/backend/cache
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    container_name: stockpredict-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  model_data:
+  cache_data:
